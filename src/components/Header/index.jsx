@@ -3,12 +3,14 @@ import "./header.css";
 export default function Header() {
   return (
     <header className="header">
-      <h1 className="logo">💪 Fôlego</h1>
+      <a href="/" className="logo">
+        💪 Fôlego
+      </a>
 
       <nav className="nav">
-        <p>Início</p>
-        <p>Modalidades</p>
-        <p>Sobre</p>
+        <a href="/">Início</a>
+        <a href="/modalidades">Modalidades</a>
+        <a href="/sobre">Sobre</a>
       </nav>
     </header>
   );
