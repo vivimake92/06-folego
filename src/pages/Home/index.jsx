@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 import "./home.css";
 
 export default function Home() {
@@ -9,9 +11,9 @@ export default function Home() {
         Seis modalidades, turmas pequenas e horários que cabem na sua rotina.
       </p>
 
-      <a href="/modalidades" className="button">
+      <Link to="/modalidades" className="button">
         Conheça nossas modalidades
-      </a>
+      </Link>
     </section>
   );
 }
