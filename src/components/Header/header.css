@@ -1,0 +1,36 @@
+.header {
+  background-color: #0f766e;
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav a {
+  color: #ccfbf1;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 3px solid transparent;
+}
+
+.nav a.active {
+  color: #ffffff;
+  font-weight: 700;
+  border-bottom-color: #fbbf24;
+}
