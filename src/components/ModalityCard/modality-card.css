@@ -1,0 +1,18 @@
+.modality-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.modality-emoji {
+  font-size: 2rem;
+}
+
+.modality-card h2 {
+  font-size: 1.25rem;
+}
+
+.modality-card p {
+  color: #475569;
+}
