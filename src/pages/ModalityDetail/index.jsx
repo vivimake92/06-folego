@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router";
+import { useParams, Link, useNavigate } from "react-router";
 
 import "./modality-detail.css";
 
@@ -6,6 +6,8 @@ import modalities from "../../data/modalities";
 
 export default function ModalityDetail() {
   const { slug } = useParams();
+  const navigate = useNavigate();
+
   const modality = modalities.find((item) => {
     return item.slug == slug;
   });
@@ -22,6 +24,9 @@ export default function ModalityDetail() {
 
   return (
     <section className="content">
+      <button className="back-button" onClick={() => navigate(-1)}>
+        ← Voltar
+      </button>
       <span className="detail-emoji">{modality.emoji}</span>
       <h1>{modality.name}</h1>
       <p>{modality.description}</p>
