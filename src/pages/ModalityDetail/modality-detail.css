@@ -1,0 +1,14 @@
+.detail-emoji {
+  display: block;
+  font-size: 3rem;
+}
+
+.back-button {
+  background-color: transparent;
+  border: none;
+  color: #0f766e;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
