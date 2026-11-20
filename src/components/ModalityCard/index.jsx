@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 import "./modality-card.css";
 
-export default function ModalityCard(modality) {
+export default function ModalityCard({ modality }) {
   return (
     <article className="modality-card">
       <span className="modality-emoji">{modality.emoji}</span>

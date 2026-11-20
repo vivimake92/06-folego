@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { useParams, Link } from "react-router";
 
 import "./modality-detail.css";
 
@@ -9,6 +9,16 @@ export default function ModalityDetail() {
   const modality = modalities.find((item) => {
     return item.slug == slug;
   });
+
+  if (modality == undefined) {
+    return (
+      <section className="content">
+        <h1>Modalidade {slug} não encontrada</h1>
+        <p>Confira o endereço ou veja a lista completa.</p>
+        <Link to="/modalidades">Ver todas as modalidades</Link>
+      </section>
+    );
+  }
 
   return (
     <section className="content">
